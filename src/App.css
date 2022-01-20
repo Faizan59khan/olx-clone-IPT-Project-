@@ -1,0 +1,385 @@
+body{
+  overflow-x: hidden;
+}
+.color{color: #002f34;}
+.header{
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  z-index: 9;
+  background: #f1f1f1;
+  box-shadow: 0px 2px 2px #dfdede;
+  padding: 0px 7%;
+  
+}
+input, button,select,textarea{
+outline: none;                      /* now to outline show when select input */
+}
+button{cursor: pointer;}
+.header .logo{
+  width: 50px;
+  margin-right: 20px;
+}
+.header .logo img{
+width: 100%;
+}
+.header .location{
+  border-radius: 5px;
+    background: #fff;
+    border: 2px #002f34 solid;
+}
+.header .location .ico{
+ padding:10px;
+}
+.header .location .label{
+  flex: 1;
+  padding: 10px;
+  border: 0px;
+}
+.header .location .arro{
+  float: 1;
+  padding: 10px;
+  border: 0px;
+  background: #fff;
+}
+
+.header .search{
+  background: #fff;
+  border-radius: 5px;
+  border: 2px #002f34 solid;
+  margin: 0px 20px;
+  flex: 2;
+}
+.header .search .query{
+  flex: 1;
+  padding: 10px;
+  border: 0px;
+}
+.header .search .go{
+  flex: 1;
+  padding: 10px;
+  border: 0px;
+  border-radius: 5px;
+  background: #002f34;
+  max-width: 50px;
+  height: 50px;
+  color: #ffffff
+}
+
+.header .actions{
+  flex: 1;
+  max-width: 200px;
+  align-items: flex-end;        /* sell box end mai agya */
+  justify-content: flex-end;
+}
+.header .actions a{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  font-weight: bold;
+    color: #002f34;
+    text-decoration: none;
+   
+}
+.header .actions .sell{
+  
+  position: relative;
+  border: none;
+  display: flex;
+    pointer-events: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.border-img{
+  height: 3.5rem;
+  width: 9rem;
+}
+.sell-content{
+  position: absolute;
+  left:2.5rem;
+ 
+}
+.header .actions .sell .sell-content .ico span{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  margin-left: 5px;
+  
+}
+.header .actions .ico i{
+  
+ 
+ font-size: large;
+}
+
+.hnav{
+  overflow-y: hidden;
+  top: 70px;
+  left: 0px;
+  right: 0px;
+  height: 63px;
+  z-index: 8;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px #dfdede;
+  padding: 0px 7%;
+}
+
+.hnav .view-cates{
+  border: 0px;
+  padding: 10px 15px;
+  background: rgba(0,0,0,0);
+}
+.hnav .view-cates .arro{
+  border: 0px;
+  padding: 3px 10px;
+  background: rgba(0,0,0,0);
+  margin-left: 10px;
+}
+.hnav .view-cates:hover{
+  background: #f1f1f1;
+}
+.hnav a{
+  padding: 15px;
+  margin-right: 2px;
+}
+.hnav a:hover {
+  text-decoration: none;
+  color: #04b2d1
+}
+.space{
+  height: 140px;
+}
+
+.footer{
+  padding: 0px 18%;
+  background: #f9f9f9;
+  flex-wrap: wrap;
+  border-top: 1px #ccc solid;
+}
+
+.footer .block{
+  flex: 1;
+  padding: 20px 0px 50px 0px;
+}
+.footer .block .title{
+  margin-bottom: 10px;
+}
+.footer .block a{
+  line-height: 1.6;
+}
+
+.footer1{
+  padding: 15px 18%;
+  background: #002f34;
+  
+}
+.footer1 h2{
+  flex: 1;
+}
+.footer1 h2.r{
+  text-align: right;
+}
+
+.home-page{
+
+/* */
+  
+}
+.home-page .fresh{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #002f34;
+  margin-left:15px;
+  margin-bottom: 10px;
+  
+}
+/* .add-list{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+.add-list a:hover{
+  text-decoration: none;
+}
+.addItem{
+  display: flex;
+}
+.add-item{ 
+
+  max-height: 270px;
+  min-height:270px;
+ 
+  max-width: 280px;
+  min-width: 280px;
+  
+  flex-basis: 20%;
+  margin: 8px;
+  padding: 8px;
+  border: 1px #ddd solid;
+}
+.add-item .poster{
+  height: 160px;
+  margin-left: 7%;
+}
+
+.add-item .title{
+  margin-top: 8px;
+  color: #002f34;
+  font-weight: bold;
+  text-align: center;
+}
+
+.add-item .tagline{
+  color: rgba(177, 177, 177, 0.918);
+  text-align: center;
+}
+
+.add-item .ftr{
+  margin-left: 5px;
+  padding: 5px;
+}
+.add-item .ftr .location{
+  margin-top: 5px;
+  flex: 2;
+  color: rgba(177, 177, 177, 0.918);
+}
+.add-item .ftr .stamp{
+  flex: 1;
+} */
+
+
+.load-more{
+  margin: 40px auto;
+  border-radius: 10px;
+  height: 45px;
+  background: #fff;
+  border: 1px solid #002f34;
+  color: #002f34;
+  display: table;     /* button set in a centre */
+}
+.load-more:hover{
+  border: 3px solid #002f34;
+}
+
+.app-ribbon{
+  padding: 0 18%;
+  background: #f9f9f9;
+}
+.app-ribbon .links .title{
+  margin-bottom: 20px;
+}
+.app-ribbon .meta{
+  
+}
+.app-ribbon .links a{
+  margin: 0px 10px 0px 0px;
+}
+
+.add{
+  margin-bottom: 50px;
+}
+
+
+.info{
+  border: 0.5px solid #ccc;
+  padding: 10px;
+  
+}
+
+.info .info-loc{
+  margin-top: 30px;
+}
+
+.detndes{
+  border: 1px solid  rgb(184, 182, 182);
+  padding: 6px 8px;
+}
+
+.album{
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 5px;
+}
+
+/* SIGN UP COMPONENT CSS */
+.Sign_UpForm{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.Sign_UpForm > input {
+  margin-bottom: 1.5em;
+}
+.post-ad-form{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #002f34;
+}
+#form-details{
+  border:1px solid rgb(187, 182, 182);
+  border-radius: 5px;
+  margin: 30px;
+}
+#form-details h3{
+  margin: 20px;
+  font-weight: bold;
+}
+.post-ad-form .sell-heading{
+  text-align: center;
+  font-weight: bold;
+
+}
+#form-details input, select{
+  width:100%;
+  height: 35px;
+}
+.discription textarea{
+  height: 100px;
+  width: 100%;
+}
+.post-ad-form label{
+  display: block;
+  margin: 20px;
+}
+hr{
+  color:1px solid rgb(187, 182, 182);
+}
+.uploadImage{
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+font-weight: 700;
+color: #fff;
+border:none;
+background-color: #002f34;
+border-radius: 2px;
+ margin: auto !important;
+  margin-bottom: 10px !important;
+}
+
+
+/* 
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+} */
